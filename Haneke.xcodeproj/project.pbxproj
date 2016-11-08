@@ -489,6 +489,7 @@
 					};
 					A0026E9919C9BFBC004DE0C6 = {
 						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0800;
 					};
 					A095C9551980418C00CD0F4C = {
 						CreatedOnToolsVersion = 6.0;

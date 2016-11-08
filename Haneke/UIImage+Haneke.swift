@@ -19,7 +19,11 @@ extension UIImage {
     }
 
     func hnk_hasAlpha() -> Bool {
-        let alpha = CGImageGetAlphaInfo(self.CGImage!)
+        
+        guard let cgImage = self.CGImage else {
+            return false
+        }
+        let alpha = CGImageGetAlphaInfo(cgImage)
         switch alpha {
         case .First, .Last, .PremultipliedFirst, .PremultipliedLast, .Only:
             return true
